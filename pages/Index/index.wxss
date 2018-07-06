@@ -1,0 +1,117 @@
+page{
+  background: #efefef;
+}
+.regionChoose{
+  width: 700rpx;
+  height: 550rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.topCircle{
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  position: absolute;
+  top: -90rpx;
+  left: 250rpx;
+  border-radius: 50%;
+}
+.topCircle image{
+  width: 150rpx;
+  height: 150rpx;
+}
+/*ChooeseBlock  */
+.ChooeseBlock{
+  width: 650rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  /* background: pink; */
+  margin-top: 110rpx;
+}
+.regionLine{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.regionStart , .regionEnd{
+  width: calc((100% - 100rpx)/2);
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.marginRight{
+  margin-right: 10rpx;
+}
+.colorGray{
+  color: #ccc;
+}
+.fontSmall{
+  font-size: 28rpx;
+}
+.fontBig{
+  font-size: 38rpx;
+}
+.regionExchange image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.departureDate{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SearchBt{
+  width: 650rpx;
+  height: 100rpx;
+  margin-top: 20px;
+  background: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+
+
+
+
+
+
+
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

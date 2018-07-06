@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class='regionChoose'>
+  <view class='topCircle'>
+    <image mode="aspectFit" src='../../images/logo_bus.png'></image>
+  </view>
+  <view class='ChooeseBlock'>
+    <view class='regionLine'>
+      <view class='regionStart'>
+        <text class='fontSmall marginRight colorGray'>出发地</text>
+        <text class='fontBig'>{{departure}}</text>
+      </view>
+      <view class='regionExchange'>
+        <image bindtap='ExchangePlace' mode="aspectFit" src='../../images/exchange.png'></image>
+      </view>
+      <view class='regionEnd'>
+        <text class='fontSmall marginRight colorGray'>目的地</text>
+        <text class='fontBig'>{{destination}}</text>
+      </view>
+    </view>
+    <view class='departureDate'>
+      <text class='colorGray'>出发日期</text>
+      <picker mode="date" value="{{departureDate}}" start="{{DateStart}}" bindchange="bindDateChange">
+      {{departureDate}}
+      </picker>
+    </view>
+  </view>
+  <view class='SearchBt' bindtap='ToSearch'>查询</view>
+  
+</view>
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

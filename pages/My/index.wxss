@@ -1,0 +1,108 @@
+page{
+  background: #efefef;
+}
+.Banner{
+  width: 100%;
+  height: 200rpx;
+}
+.Banner image{
+  width: 100%;
+  height: 200rpx;
+}
+.OrderBlock{
+  width: calc(100% - 40rpx);
+  height: 300px;
+  /* margin-top: 10px; */
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.ColumnTit{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #999;
+  border-bottom: 1px solid #999;
+}
+.OrderList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.OrderItem{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  height: 250rpx;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.OrderInfo{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.InfoTop{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.InfoTop view:nth-of-type(1) {
+  flex-grow: 2;
+}
+.InfoTop view:nth-of-type(2) {
+  flex-grow: 1;
+  text-align: right;
+}
+.FloatRight{
+  justify-content: flex-end;
+}
+.InfoBot{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
+/* .InfoBot view{
+  display: flex;
+  flex: 1;
+} */
+.InfoBot view:nth-of-type(1) {
+  flex-grow: 2;
+  color: #999;
+}
+.InfoBot view:nth-of-type(2) {
+  flex-grow: 1;
+  text-align: right;
+  color: #3498db;
+}
+.Delete{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px dotted #999;
+}
+.DeleteBt{
+  width: 150rpx;
+  height: 45rpx;
+  font-size: 30rpx;
+}
