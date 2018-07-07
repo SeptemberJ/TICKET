@@ -10,11 +10,12 @@ Page({
     departureDate:null,
     DateStart: null,
     departure:'海门',
-    destination:'上海'
+    destination:'上海',
     // motto: 'Hello World',
     // userInfo: {},
     // hasUserInfo: false,
     // canIUse: wx.canIUse('button.open-type.getUserInfo')
+    OrderList:[]
   },
   //事件处理函数
   bindViewTap: function() {

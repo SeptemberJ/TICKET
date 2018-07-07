@@ -34,7 +34,7 @@ Page({
   //登录
   LoginIn(){
     wx.switchTab({
-      url: '../index/index',
+      url: '../Index/index',
     })
   },
   GetLogin() {

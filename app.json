@@ -1,7 +1,7 @@
 {
   "pages":[
+    "pages/Index/index",
     "pages/My/index",
-    "pages/index/index",
     "pages/Login/index",
     "pages/Sign/index",
     "pages/logs/logs"
@@ -19,7 +19,7 @@
       "backgroundColor": "#fff",
       "list": [
         {
-          "pagePath": "pages/index/index",
+          "pagePath": "pages/Index/index",
           "iconPath": "images/bus.png",
           "selectedIconPath": "images/bus_active.png",
           "text": "首页"

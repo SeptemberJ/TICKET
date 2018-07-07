@@ -56,6 +56,18 @@ Page({
       departureDate: util.formatTime(new Date()),
     })
   },
+  //出发地
+  ChangeDeparture(e){
+    this.setData({
+      departure: e.detail.value
+    })
+  },
+  //目的地
+  ChangeDestination(e) {
+    this.setData({
+      destination: e.detail.value
+    })
+  },
   //起始地址互换
   ExchangePlace(){
     const placeS = this.data.departure
