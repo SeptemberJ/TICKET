@@ -2,22 +2,25 @@
   <image mode="aspectFill" src='../../images/20160808140440_41466.jpg'></image>
 </view> -->
 <view class='OrderBlock'>
-  <view class='ColumnTit'>我的订单</view>
+  <!-- <view class='ColumnTit'>我的订单</view> -->
   <view class='OrderList'>
-    <view class='OrderItem'>
+    <view class='OrderItem' wx:for="{{OrderList}}" wx:for-index="OrderIdx" wx:for-item="OrderItem">
+      <view class='lineBar'></view>
       <view class='OrderInfo'>
         <view class='InfoTop'>
-          <view><text>海门--上海</text></view>
-          <view class=''><text>￥52</text></view>
+          <view><text>{{OrderItem.departure}}--{{OrderItem.destination}}</text></view>
+          <view class=''><text>￥{{OrderItem.price}}</text></view>
         </view>
         <view class='InfoBot'>
-          <view><text>发车时间：2018-07-15</text></view>
-          <view class=''><text>出票成功</text></view>
+          <view><text>发车时间：{{OrderItem.date}}</text></view>
+          <view class=''><text>{{OrderItem.status}}</text></view>
         </view>
       </view>
-      <view class='Delete'>
+      <view class='BTs'>
+        <view class='DetailBt'>查看</view>
         <view class='DeleteBt'>删除订单</view>
       </view>
+      <view class='lineBarBot'></view>
     </view>
   </view>
 </view>

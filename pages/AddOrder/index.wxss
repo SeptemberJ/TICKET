@@ -1,0 +1,189 @@
+page{
+  background: #efefef;
+}
+.AddOrder{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.Schedule{
+  width: 100%;
+  height: 230rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #3498db;
+  color: #fff;
+}
+.ScheduleTop{
+  width: calc(100% - 40rpx);
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ScheduleTop .departure{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ScheduleTop .mid{
+  width: 310rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ScheduleTop .destination{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ScheduleBot{
+  width: calc(100% - 40rpx);
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+/*Passenger  */
+.Passenger{
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 0 10px 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.PassengerTit{
+  width: calc(100% - 40rpx);
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #efefef;
+}
+.Passengers{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.PassengerItem{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.PassengerItem:not(:nth-of-type(1)){
+  border-top: 1px solid #efefef;
+}
+.PassengerItem image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.PassengerInfo{
+  width: calc(100% - 50rpx);
+  height: 100%;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.AddBtnBlock{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AddAdult{
+  width: 400rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  background: #3498db;
+  font-size: 30rpx;
+  color: #fff; 
+}
+.Addchildren{
+  width: 200rpx;
+  text-align: center;
+  line-height: 60rpx;
+  height: 100%;
+  border: 1px solid #3498db;
+  font-size: 30rpx;
+  color: #3498db; 
+}
+.childrenAmount{
+  width: calc(100% - 50rpx);
+  height: 100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*phoneNumber  */
+.phoneNumberBlock{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  margin: 10px auto;
+  background: #fff;
+}
+.phoneNumber{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*SumBlock  */
+.SumFixed{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 30rpx;
+  margin-top: 20px;
+  background: #000;
+  /* background: #13227a; */
+  color: #fff;
+}
+.SumBlock{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SubmmitBt{
+  width: 200rpx;
+  height: 30px;
+  background: #3498db;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10rpx;
+}

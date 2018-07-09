@@ -10,11 +10,11 @@ page{
   height: 200rpx;
 }
 .OrderBlock{
-  width: calc(100% - 40rpx);
-  height: 300px;
+  width: 100%;
+  /* width: calc(100% - 40rpx); */
   /* margin-top: 10px; */
-  background: #fff;
-  padding: 20rpx;
+  /* background: #fff; */
+  padding: 20rpx 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -37,19 +37,38 @@ page{
   justify-content: flex-start;
 }
 .OrderItem{
-  width: calc(100% - 40rpx);
-  padding: 0 20rpx;
-  height: 250rpx;
-  border: 1px solid #ccc;
+  width: 100%;
+  /* width: calc(100% - 40rpx);
+  padding: 0 20rpx; */
+  height: calc(300rpx + 30px);
+  border: 0px solid #ccc;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lineBar{
+  width:100%;height:12px;background:#efefef;
+    background-image:-webkit-gradient(linear,50% 0,0 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#fff),to(#fff)),
+                    -webkit-gradient(linear,50% 0,100% 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#fff),to(#fff));
+    background-size:15px 10px;
+    background-repeat:repeat-x;
+    background-position:0 100%;
+}
+.lineBarBot{
+  width:100%;height:12px;background:#fff;
+    background-image:-webkit-gradient(linear,50% 0,0 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#efefef),to(#efefef)),
+                    -webkit-gradient(linear,50% 0,100% 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#efefef),to(#efefef));
+    background-size:15px 15px;
+    background-repeat:repeat-x;
+    background-position:0 100%;
 }
 .OrderInfo{
-  width: 100%;
+  width: calc(100% - 40rpx);
   height: 200rpx;
+  padding: 0 20rpx;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -93,16 +112,28 @@ page{
   text-align: right;
   color: #3498db;
 }
-.Delete{
+.BTs{
   width: 100%;
-  height: 50px;
+  height: 100rpx;
+  background: #fff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-top: 1px dotted #999;
 }
-.DeleteBt{
+.DeleteBt , .DetailBt{
   width: 150rpx;
-  height: 45rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
   font-size: 30rpx;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 10rpx;
+}
+.DetailBt{
+  background: #3498db;
+}
+.DeleteBt{
+  background: red;
 }

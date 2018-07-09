@@ -15,7 +15,10 @@ Page({
     // userInfo: {},
     // hasUserInfo: false,
     // canIUse: wx.canIUse('button.open-type.getUserInfo')
-    OrderList:[]
+    OrderList:[
+      { 'id': 0, 'departure': '海门', 'destination':'上海','price':52,'date':'2018-07-09','status':'出票成功'},
+      { 'id': 0, 'departure': '海门', 'destination': '南京', 'price': 98, 'date': '2018-07-29', 'status': '出票成功' }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

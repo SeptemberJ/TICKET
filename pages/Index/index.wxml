@@ -7,7 +7,7 @@
     <view class='regionLine'>
       <view class='regionStart'>
         <text class='fontSmall marginRight colorGray'>出发地</text>
-        <input style='width:150rpx;border-bottom:1px solid red;' placeholder-class="phcolor" placeholder="" value="{{departure}}" bindinput='ChangeDeparture'/>
+        <input style='font-size:30rpx;width:150rpx;border-bottom:1px solid #ddd;' placeholder-class="phcolor" placeholder="" value="{{departure}}" bindinput='ChangeDeparture'/>
         <!-- <text class='fontBig'>{{departure}}</text> -->
       </view>
       <view class='regionExchange'>
@@ -15,7 +15,7 @@
       </view>
       <view class='regionEnd'>
         <text class='fontSmall marginRight colorGray'>目的地</text>
-        <input style='width:150rpx;border-bottom:1px solid red;' placeholder-class="phcolor" placeholder="" value="{{destination}}" bindinput='ChangeDestination'/>
+        <input style='font-size:30rpx;width:150rpx;border-bottom:1px solid #ddd;' placeholder-class="phcolor" placeholder="" value="{{destination}}" bindinput='ChangeDestination'/>
         <!-- <text class='fontBig'>{{destination}}</text> -->
       </view>
     </view>

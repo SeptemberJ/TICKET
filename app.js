@@ -36,8 +36,20 @@ App({
         }
       }
     })
+
+    //触发器
+    const selfEmit = new EM.EventEmitter();
+    this.globalData.selfEmit = selfEmit
+    this.globalData.selfEmit.on('departureDate changed', ()=> {
+      console.log('triggled')
+      this.globalData.CanPre = util.CompareDate(this.globalData.departureDate, this.globalData.CurDate)?true:false
+      this.globalData.selfEmit.trigger('globalData changed',()=> {});
+    });
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    CanPre:true,
+    departureDate: '2018-07-10',
+    CurDate: util.formatTime(new Date()),
   }
 })

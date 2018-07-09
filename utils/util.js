@@ -33,7 +33,12 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const CompareDate = (date1, date2)=>{
+  return ((new Date(date1.replace(/-/g, "\/"))) > (new Date(date2.replace(/-/g, "\/"))));
+}
+
 module.exports = {
   formatTime: formatTime,
   wxPromisify: wxPromisify,
+  CompareDate: CompareDate
 }

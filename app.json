@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/AddOrder/index",
+    "pages/Schedules/index",
     "pages/Index/index",
     "pages/My/index",
     "pages/Login/index",
