@@ -18,8 +18,8 @@ Page({
       carInfo:'车次FSK308【过路车】,行驶31公里',
       price:2
     },
-    PassengerList2:[],
-    PassengerList:[
+    PassengerList:[],
+    PassengerList2:[
       { 'id': 0, 'name': '张三', 'identification': '320612198912123456', 'kind': '0' },
       { 'id': 0, 'name': '张三爸爸', 'identification': '320612198912123456', 'kind': '1' },
     ],
@@ -40,7 +40,7 @@ Page({
       })
     }
   },
-  //
+  //携童票增加
   AddChildren_min(){
     if (this.data.childrenAmount > 1){
       this.setData({
@@ -51,8 +51,8 @@ Page({
         childrenAmount: 0
       })
     }
-    
   },
+  //携童票减少
   AddChildren_add() {
     if (this.data.childrenAmount < this.data.PassengerList.length){
       this.setData({
@@ -63,6 +63,53 @@ Page({
         image: '../../images/attention.png',
         title: '每人仅一名！'
       });
+    }
+  },
+  ChangePhone(e){
+    this.setData({
+      phone: e.detail.value
+    })
+  },
+  DeleteThisChoosed(e){
+    let Idx = e.currentTarget.dataset.index
+    let temp = util.objDeepCopy(this.data.PassengerList)
+    temp.splice(Idx, 1)
+    this.setData({
+      PassengerList: temp
+    })
+  },
+  AddPassenger(){
+    wx.navigateTo({
+      url: '../Passenger/list/index',
+    })
+  },
+  //填充乘客信息
+  backPassengerInfo(ChoosedList){
+    this.setData({
+      PassengerList: ChoosedList
+    })
+  },
+  SubmitOrder(){
+    if (this.data.PassengerList.length<1){
+      wx.showToast({
+        image: '../../images/attention.png',
+        title: '请添加乘客！'
+      });
+      return false
+    }
+    if (!(/^1[34578]\d{9}$/).test(this.data.phone)) {
+      wx.showToast({
+        image: '../../images/attention.png',
+        title: '手机号格式！',
+      });
+      return false
+    }
+    if (!this.data.phone){
+      wx.showToast({
+        image: '../../images/attention.png',
+        title: '手机号为空！'
+      });
+      return false
     }
   }
 })

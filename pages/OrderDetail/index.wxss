@@ -1,0 +1,158 @@
+page{
+  background: #efefef;
+}
+.OrderDetail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.Schedule{
+  width: 100%;
+  height: calc(230rpx + 420rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #3498db;
+  color: #fff;
+}
+.ScheduleTop{
+  width: calc(100% - 40rpx);
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ScheduleTop .departure{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ScheduleTop .mid{
+  width: 310rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ScheduleTop .destination{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ScheduleBot{
+  width: calc(100% - 40rpx);
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+.TicketInfo{
+  width: calc(100% - 40rpx);
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+.TicketCode{
+  width: 100%;
+  height: 200rpx;
+}
+.TicketCode image{
+  width: 100%;
+  height: 200rpx;
+}
+.TicketCheck , .GetTicket{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+/*OrderPassengerBlock  */
+.OrderPassengerBlock{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background: #fff;
+}
+.OrderPassengerBlock text{
+  padding-left: 20rpx;
+}
+.showOpen , .showClose{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.showOpen{
+  transform: rotate(180deg);
+}
+.listBlock{
+  width: 100%;
+  padding: 0 0 10px 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Passengers{
+  width: calc(100% - 40rpx);
+  padding: 0 20rpx;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.PassengerItem{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #efefef;
+}
+/* .PassengerItem:not(:nth-of-type(1)){
+  border-top: 1px solid #efefef;
+} */
+
+.PassengerInfo{
+  width: 100%;
+  height: 100%;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+/*ItemBar  */
+.ItemBar{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background: #fff;
+}
+.ItemBar text{
+  padding: 0 20rpx;
+}

@@ -1,0 +1,66 @@
+<view class='OrderDetail'>
+  <view class='Schedule'>
+    <view class='ScheduleTop'>
+      <view class='departure'>
+        <text>{{ScheduleInfo.departure}}</text>
+        <text style='font-size:30rpx;'>{{ScheduleInfo.departureStation}}</text>
+      </view>
+      <view class='mid'>
+        <text style='font-size:30rpx;'>{{ScheduleInfo.time}}</text>
+        <text style='width:200rpx;height:1px;background:#fff;'></text>
+        <text style='font-size:30rpx;'>{{ScheduleInfo.date}}</text>
+      </view>
+      <view class='destination'>
+        <text>{{ScheduleInfo.destination}}</text>
+        <text style='font-size:30rpx;'>{{ScheduleInfo.destinationStation}}</text>
+      </view>
+    </view>
+    <view class='ScheduleBot'>
+      <text>{{ScheduleInfo.carInfo}}</text>
+      <text>￥{{ScheduleInfo.price}}</text>
+    </view>
+    <view class='TicketInfo'>
+      <view class='TicketCheck'>
+        <text>座位号：1</text>
+        <text>检票口：12</text>
+      </view>
+      <view class='TicketCode'>
+        <image src='../../images/code.jpg'></image>
+      </view>
+      <view class='GetTicket'>
+        <text>取票号：1234567</text>
+        <text>取票密码：123456</text>
+      </view>
+    </view>
+  </view>
+  <!--passenger  -->
+  <view class='OrderPassengerBlock' bindtap='TogggleList'>
+    <text>乘客信息</text>
+    <image class='{{showPassenger?"showOpen":"showClose"}}' src='../../images/arrow down.png'></image>
+  </view>
+  <view class='listBlock' wx:if="{{showPassenger}}">
+    <view class='Passengers'>
+      <view class='PassengerItem' wx:for="{{PassengerList}}" wx:for-index="PassengerIdx" wx:for-item="PassengerItem">
+        <!-- <text>乘车人</text> -->
+        <view class='PassengerInfo'>
+          <text>姓名：{{PassengerItem.name}}</text>
+          <text style='color:#999;'>身份证号：{{PassengerItem.identification}}</text>
+          <text style='color:#999;'>手机号：{{PassengerItem.phone}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--add info  -->
+  <view class='ItemBar'>
+    <text>取票人手机</text>
+    <text>{{phone}}</text>
+  </view>
+  <view class='ItemBar'>
+    <text>订单号</text>
+    <text>{{orderNumber}}</text>
+  </view>
+  <view class='ItemBar'>
+    <text>总额</text>
+    <text class='colorred'>￥{{ScheduleInfo.price * PassengerList.length}}</text>
+  </view>
+</view>

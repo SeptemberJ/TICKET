@@ -91,6 +91,10 @@ Page({
         title: '请选择出发地和目的地!'
       });
       return false
+    }else{
+      wx.navigateTo({
+        url: '../Schedules/index',
+      })
     }
   },
   getUserInfo: function(e) {

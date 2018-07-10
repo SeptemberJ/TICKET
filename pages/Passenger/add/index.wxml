@@ -1,0 +1,15 @@
+<view class='AddInfoBox'>
+  <view class='InfoItem'>
+    <text>乘客姓名</text>
+    <input placeholder-class="phcolor" placeholder='请输入乘客姓名' value='{{name}}'></input>
+  </view>
+  <view class='InfoItem'>
+    <text>身份证号</text>
+    <input type='idcard' placeholder-class="phcolor" placeholder='请输入乘客身份证号' value='{{identification}}'></input>
+  </view>
+  <view class='InfoItem'>
+    <text>联系手机</text>
+    <input type='number' placeholder-class="phcolor" placeholder='请输入乘客联系手机' value='{{phone}}'></input>
+  </view>
+</view>
+<view class='AddInfoBtn'>保存</view>

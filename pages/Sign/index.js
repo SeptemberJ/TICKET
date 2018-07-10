@@ -39,7 +39,7 @@ Page({
   GetCode() {
     if (!(/^1[34578]\d{9}$/).test(this.data.User_Phone)) {
       wx.showToast({
-        image: '../../images/icon/attention.png',
+        image: '../../images/attention.png',
         title: '手机号格式！',
         duration: 2000,
       });
@@ -139,19 +139,19 @@ Page({
           break
         case 0:
           wx.showToast({
-            image: '../../images/icon/attention.png',
+            image: '../../images/attention.png',
             title: '提交失败!'
           });
           break
         default:
           wx.showToast({
-            image: '../../images/icon/attention.png',
+            image: '../../images/attention.png',
             title: '服务器繁忙！'
           });
       }
     }).catch((res) => {
       wx.showToast({
-        image: '../../images/icon/attention.png',
+        image: '../../images/attention.png',
         title: '服务器繁忙！'
       });
     })

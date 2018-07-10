@@ -1,0 +1,79 @@
+page{
+  background: #efefef;
+}
+.AddPassengerBtn{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #3498db; 
+}
+.AddPassengerBtn image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx
+}
+.PassengerList{
+  width: 100%;
+  margin-top: 110rpx;
+  margin-bottom: calc(140rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+}
+.Passenger{
+  width: calc(100% - 40rpx);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  height:120rpx;
+}
+ .Passenger:not(:nth-of-type(1)){
+  border-top: 1px solid #efefef;
+} 
+.checkIcon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.PassengerInfo{
+  width: 550rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.editIcon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.FixedBot{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: red;
+  z-index: 999;
+}
+.SureBtn{
+  width: 90%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background: red;
+  color: #fff;
+  border-radius: 10rpx;
+}

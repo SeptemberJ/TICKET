@@ -1,8 +1,11 @@
 {
   "pages":[
-    "pages/AddOrder/index",
-    "pages/Schedules/index",
     "pages/Index/index",
+    "pages/AddOrder/index",
+    "pages/Passenger/list/index",
+    "pages/Passenger/add/index",
+    "pages/OrderDetail/index",
+    "pages/Schedules/index",
     "pages/My/index",
     "pages/Login/index",
     "pages/Sign/index",

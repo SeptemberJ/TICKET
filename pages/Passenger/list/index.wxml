@@ -1,0 +1,17 @@
+<view class='AddPassengerBtn' bindtap='AddNewPassenger'>
+  <image src='../../../images/add user.png'></image>
+  <text>新增联系人</text>
+</view>
+<view class='PassengerList'>
+  <view class='Passenger' wx:for="{{PassengerListCopy}}" wx:for-index="PassengerIdx" wx:for-item="PassengerItem" wx:key="PassengerKey">
+    <image class='checkIcon' src='{{PassengerItem.checked?"../../../images/checked.png":"../../../images/nochecked.png"}}' bindtap='ToggleChecked' data-index='{{PassengerIdx}}'></image>
+    <view class='PassengerInfo'>
+      <text>{{PassengerItem.name}}</text>
+      <text class='smallFontSzie colorgray'>{{PassengerItem.identification}}</text>
+    </view>
+    <image class='editIcon' src='../../../images/edit.png' bindtap='EditPassenger' data-index='{{PassengerIdx}}'></image>
+  </view>
+</view>
+<view class='FixedBot'>
+  <view class='SureBtn' bindtap='SureChecked'>确定</view>
+</view>

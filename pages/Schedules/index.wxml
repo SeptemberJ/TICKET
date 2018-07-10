@@ -9,7 +9,7 @@
 </view>
 <!--list  -->
 <view class='Schedules'>
-  <view class='ScheduleItem'wx:for="{{ScheduleList}}" wx:for-index="ScheduleIdx" wx:for-item="ScheduleItem" bindtap='ToAddOrder'>
+  <view class='ScheduleItem'wx:for="{{ScheduleList}}" wx:for-index="ScheduleIdx" wx:for-item="ScheduleItem" wx:for-key="ScheduleKey" bindtap='ToAddOrder'>
     <view class='TimeBlock'>{{ScheduleItem.departureTime}}</view>
     <view class='InfoBlock'>
       <view>

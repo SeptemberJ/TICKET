@@ -37,8 +37,18 @@ const CompareDate = (date1, date2)=>{
   return ((new Date(date1.replace(/-/g, "\/"))) > (new Date(date2.replace(/-/g, "\/"))));
 }
 
+const objDeepCopy = (source)=> {
+  var sourceCopy = source instanceof Array ? [] : {};
+  for (var item in source) {
+    sourceCopy[item] = typeof source[item] === 'object' ? objDeepCopy(source[item]) : source[item];
+  }
+  return sourceCopy;
+}
+
+
 module.exports = {
   formatTime: formatTime,
   wxPromisify: wxPromisify,
-  CompareDate: CompareDate
+  CompareDate: CompareDate,
+  objDeepCopy: objDeepCopy
 }

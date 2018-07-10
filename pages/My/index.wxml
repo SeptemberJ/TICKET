@@ -17,7 +17,7 @@
         </view>
       </view>
       <view class='BTs'>
-        <view class='DetailBt'>查看</view>
+        <view class='DetailBt' bindtap='GoOrderDetail'>查看</view>
         <view class='DeleteBt'>删除订单</view>
       </view>
       <view class='lineBarBot'></view>

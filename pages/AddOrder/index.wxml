@@ -25,13 +25,13 @@
     <text class='PassengerTit'>乘客</text>
     <view class='Passengers'>
       <view class='PassengerItem' wx:for="{{PassengerList}}" wx:for-index="PassengerIdx" wx:for-item="PassengerItem">
-        <image src='../../images/delete-o.png'></image>
+        <image src='../../images/delete-o.png' bindtap='DeleteThisChoosed' data-index='{{PassengerIdx}}'></image>
         <view class='PassengerInfo'>
           <text>{{PassengerItem.name}}</text>
           <text style='color:#999;'>{{PassengerItem.identification}}</text>
         </view>
       </view>
-      <view class='PassengerItem' wx:if="{{childrenAmount>0}}">
+      <!-- <view class='PassengerItem' wx:if="{{childrenAmount>0}}">
         <image src='../../images/delete-o.png'></image>
         <view class='childrenAmount'>
           <text>携童票 {{childrenAmount}} 张</text>
@@ -39,19 +39,19 @@
           <text>{{childrenAmount}}</text>
           <image src="../../images/add-r-o.png" bindtap='AddChildren_add'></image>
         </view>
-      </view>
+      </view> -->
     </view>
     <!--add botton  -->
     <view class='AddBtnBlock'>
-      <view class='AddAdult'>添加/修改乘客</view>
-      <view class='Addchildren' bindtap='AddChildren'>携童申请</view>
+      <view class='AddAdult' bindtap='AddPassenger'>添加/修改乘客</view>
+      <!-- <view class='Addchildren' bindtap='AddChildren'>携童申请</view> -->
     </view>
   </view>
   <!--phone number  -->
   <view class='phoneNumberBlock'>
     <view class='phoneNumber'>
-      <text>手机号</text>
-      <input  maxlength="11" placeholder="" value="{{phone}}" />
+      <text>取票手机号</text>
+      <input  maxlength="11" placeholder="" value="{{phone}}" bindtap='ChangePhone'/>
     </view>
   </view>
 </view>
@@ -59,6 +59,6 @@
 <view class='SumFixed'>
   <view class='SumBlock'>
     <text>订单总额：￥{{PassengerList.length * ScheduleInfo.price}}</text>
-    <view class='SubmmitBt'>提交订单</view>
+    <view class='SubmmitBt' bindtap='SubmitOrder'>提交订单</view>
   </view>
 </view>
