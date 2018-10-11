@@ -27,13 +27,13 @@
           "pagePath": "pages/Index/index",
           "iconPath": "images/bus.png",
           "selectedIconPath": "images/bus_active.png",
-          "text": "首页dev2"
+          "text": "首页dev2 edit writeself"
         },
         {
           "pagePath": "pages/My/index",
           "iconPath": "images/my.png",
           "selectedIconPath": "images/my_active.png",
-          "text": "我的"
+          "text": "我的edit writeself"
         }
       ]
     },
