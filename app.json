@@ -27,7 +27,7 @@
           "pagePath": "pages/Index/index",
           "iconPath": "images/bus.png",
           "selectedIconPath": "images/bus_active.png",
-          "text": "首页1"
+          "text": "首页2"
         },
         {
           "pagePath": "pages/My/index",
