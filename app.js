@@ -2,6 +2,7 @@ import h from './utils/url.js'
 var util = require('./utils/util.js')
 const EM = require('./utils/EventEmitter.js')
 var requestPromisified = util.wxPromisify(wx.request)
+var td ='nihao'
 //app.js
 App({
   onLaunch: function () {
@@ -53,3 +54,6 @@ App({
     CurDate: util.formatTime(new Date()),
   }
 })
+module.exports = {
+  td: td,
+}

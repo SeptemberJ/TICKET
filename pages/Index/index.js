@@ -2,6 +2,7 @@ import h from '../../utils/url.js'
 var util = require('../../utils/util.js')
 var MD5 = require('../../utils/md5.js')
 var requestPromisified = util.wxPromisify(wx.request)
+var UR = require('../../app.js')
 //获取应用实例
 const app = getApp()
 
@@ -23,6 +24,9 @@ Page({
     })
   },
   onLoad: function () {
+    
+    console.log('app.td---')
+    console.log(UR.td)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
